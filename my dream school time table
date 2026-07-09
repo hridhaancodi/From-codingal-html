@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>My dream school time table</title>
+</head>
+<body>
+
+<h1><mark> My dream school timetable</mark></h1>
+
+<p>
+This webpage shows my dream school timetable, favourite subjects, school activities,and useful learning links.
+</p>
+
+<h2>Use learning links</h2>
+
+<p>
+Explore fun science topics here:
+<a href="https://www.sciencekids.co.nz/">sciencekids</a>
+</p>
+
+<p>
+Explore fun coding topics here:
+<a href="https://scratch.mit.edu/">codingkids</a>
+</p>
+
+<h2>Morning school routine</h2>
+
+<ol>
+    <li>Wake up early and get ready.</li>
+    <li>Pack my school bag</li>
+    <li>Reach school on time</li>
+
+</ol>
+
+<h2> My Dream Timetable</h2>
+
+<table border="3">
+<tr>
+    <th>Day</th>
+    <th>period 1</th>
+    <th>period 2</th>
+    <th>period 3</th>
+    <th> period 4</th>
+</tr>
+
+<tr>
+    <td>Monday</td>
+    <td>Mathemathics</td>
+    <td>Coding</td>
+    <td>computer</td>
+    <td>art</td>
+</tr>
+
+<tr>
+    <td>tuesday</td>
+    <td>Science</td>
+    <td>history</td>
+    <td>pe</td>
+    <td>e.lit</td>
+</tr>
+
+<tr>
+    <td>wednesday</td>
+    <td>geography</td>
+    <td>art</td>
+    <td>pe</td>
+    <td>e.lang</td>
+</tr>
+
+<tr>
+    <td>thursday</td>
+    <td>e.lit</td>
+    <td>science</td>
+    <td>geography</td>
+    <td>history</td>
+</tr>
+
+<tr>
+    <td>friday</td>
+    <td>pe</td>
+    <td>Coding</td>
+    <td>computer</td>
+    <td>art</td>
+</tr>
+</body>
+</html>
