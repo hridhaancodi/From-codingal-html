@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>Zoo Rescue Tracker</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f1fff0;
+                padding: 25px;
+                padding-top: 70px;
+                min-height: 1200px;
+            }
+
+            h1, h2{
+                color: #2d6a4f;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            .alert {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                background: #2d6a4f;
+                color: white;
+                padding: 14px;
+                text-align: center;
+                font-weight: bold;
+            }
+
+            .animal {
+                background: #d8f3dc;
+                padding: 10px;
+                margin: 8px 0;
+                width: 220;
+            }
+
+            .moved {
+                position: relative;
+                left: 35px;
+                background: #95d5b2;
+            }
+
+            .card {
+                position: relative;
+                background: white;
+                border: 2px solid #52b788;
+                border-radius: 10px;
+                padding: 25px;
+                width: 230px;
+                text-align: center;
+            }
+
+            .tag {
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                background: #f77f00;
+                color: white;
+                padding: 6px 10px;
+                border-radius: 20px;
+                font-size: 12px;
+                font-weight: bold;
+            }
+
+            .zone {
+                position: sticky;
+                top: 50px;
+                background: #2d6a4f;
+                color: white;
+                padding: 10px;
+                margin-top: 25px;
+                font-weight: bold;
+            }
+
+            .case {
+                background: white;
+                border: 2px solid #52b788;
+                padding: 10px;
+                margin: 8px 0;
+                width: 230px;
+                border-radius: 8px;
+            }
+
+            code {
+                background: #d8f3dc;
+                color: #1b4332;
+                padding: 2px 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="alert">Zoo Rescue Alert- Emergency team active Fixed</div>
+
+        <h1>Zoo Rescue Treacker</h1>
+        <p syle="text-align:center;">Learn CSS postioning by place animal cards, rescue tags, and sticky zone labels.</p>
+
+        <h2>Static Positioning</h2>
+        <p>Static is the default position. Animal entries appear one below another.</p>
+        <p>
+            <div class="animal">Lion - Resting zone</div>
+            <div class="animal">Elephant - water zone</div>
+            <div class="animal">Penguin - Ice zone zone</div>
+
+            <h2>Relative Postining</h2>
+            <p>The Rescued animal entry move slightly using</p>
+            <code>left: 35px</code>.<p>
+                <div class="animal">Giraffe - Checkup pending</div>
+                <div class="animal">Rescued Koala - Safe</div>
+                <div class="animal">Zebra - Feeding zones</div>
+
+                <h2>Absolute Positining</h2>
+                <p>They rescue tag is is placedon the animal card using absolute positing.</p>
+                <div class="card">
+                    Panda<br>
+                    Medical check complete
+                    <div class="tag">SAFE</div>
+                </div>
+
+                <h2>Fixed Positining</h2>
+                <p>The green rescue alert at the top stays fixed even when you scroll.</p>
+
+                <div class="zone">Rescue Zone Cases - Sticky</div>
+
+                <div classes="case">Tiger  - Observation</div>
+                <div classes="case">Deer  - Released</div>
+                <div classes="case">Owl  - Night Care</div>
+                <div classes="case">Turtle  - Shell treatment</div>
+                <div classes="case">Rabbit  - Healthy</div>
+                <div classes="case">Flamingo  - Wing Check</div>
+                <div classes="case">Monkey  - Play area</div>
+                <div classes="case">Horse  - Recovery Stable</div>
+
+                <h2>top, right, bottom, left</h2>
+            </p>
+        </p>
+    </body>
+</html>
