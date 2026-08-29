@@ -4,8 +4,14 @@
         <link rel="stylesheet"
 
 href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
         <style>
+
           body {
             position: relative;
           }
@@ -19,25 +25,25 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
           .slide-forest {
             background-color: darkgreen;
           }
-          .slide-ocean {
+          .slide-Ocean {
             background-color: blue;
           }
-          .slide-desert {
+          .slide-Desert {
           background-color: rgb(122, 122, 43);
           }
         </style>
     </head>
     <body data-spy="scroll" data-target="#sfarinav" data-offset="60">
-        <div id="safarircar" class="carousel slide" data-ride="carouel">
+        <div id="safaricar" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-                <li data-target="safaricar" data-slide-to="0" class="active"></li>
-                <li data-target="safaricar" data-slide-to="1"></li>
-                <li data-target="safaricar" data-slide-to="2"></li>
+                <li data-target="#safaricar" data-slide-to="0" class="active"></li>
+                <li data-target="#safaricar" data-slide-to="1"></li>
+                <li data-target="#safaricar" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="carouel-item  active safari-slide slide-forest">Forest Safari</div>   
-                <div class="carouel-item  active safari-slide slide-Desert">Desert Safari</div>
-                <div class="carouel-item  active safari-slide slide-Ocean">Underwater Safari</div>                    
+                <div class="carousel-item  active safari-slide slide-forest">Forest Safari</div>   
+                <div class="carousel-item  active safari-slide slide-Desert">Desert Safari</div>
+                <div class="carousel-item  active safari-slide slide-Ocean">Underwater Safari</div>                    
             </div> 
             <a class="carousel-control-prev" href="#safaricar" data-slide="prev">
 
