@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <p>A function can access variable defined inside the function:</p>
+        <button type="button" onclick="myfunction()">Click Me!</button>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <script>
+         var b=5
+         function myfunction(){
+            var a = 4
+            document.getElementById("demo").innerHTML = b*a;
+         }
+         document.getElementById("demo1").innerHTML = a;
+         //a is not accesible from outside
+         document.getElementById("demo2").innerHTML = b;
+         var results=function(x,y){return x*y};
+         document.write(results(2,4));
+        </script>
+    </body>
+</html>
