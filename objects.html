@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>My Phone Contact</title>
+         <link
+
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+
+rel="stylesheet">
+        <style>
+            body {background-color:rgb(26, 206, 200);}
+            h1 {color: yellow;}
+            .card-label {font-size: 11px; color: lightgoldenrodyellow; text-transform: uppercase;}
+            pre {font-size: 13px; color: burlywood;}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="mb-1">My phone contact</h1>
+            <p class="text-muted mb-4">
+                Introduction to Objects in Javascript-grade4-6 
+            </p>
+            <div class="card shadow-sm mb-3"  style="max-width: 400px;">
+                <div class="car body">
+                    <h5 class=" card-title" style="#ff5a43;">
+                        Contact Details
+                    </h5>
+                    <ul class="List-group list-group-flush">
+                        <li class="list-group-item"><Span class="card-labor d-block">Name</Span>
+                         <strong id="Name">-</strong>
+                        </li> 
+                         <li class="list-group-item"><Span class="card-labor d-block">Phone No.</Span>
+                         <strong id="Phone">-</strong>
+                        </li> 
+                         <li class="list-group-item"><Span class="card-labor d-block">School</Span>
+                         <strong id="School">-</strong>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script>
+            var mycontact={
+                Name:"Hridhaan Shetty",
+                Phone:"+62 123 356 452",
+                School:"GMIS"
+            };
+            var namE1=document.getElementById("Name");
+            var phonE1=document.getElementById("Phone");
+            var school1=document.getElementById("School");
+            nameE1.textContent=mycontact.Name;
+            phoneE1.textContent=mycontact.Phone;
+            school1.textContent=mycontact.school;
+             var codeE1=document.getElementById("codedisplay");
+              codeE1.textContent =
+
+'var mycontact = {\n' +
+
+' name: "' + mycontact.Name + '",\n' +
+
+' phone: "' + mycontact.Phone + '",\n' +
+
+' school: "' + mycontact["school"] + '",\n'
+'};';      
+        </script>
+    </body>
+</html>
