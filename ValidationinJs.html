@@ -1,8 +1,10 @@
 <html>
     <head>
-        <title>
-
-        </title>
+        <style>
+          body {
+            font-family: Arial, sans-serif;;
+          }  
+        </style>
     </head>
     <body>
 
@@ -22,7 +24,8 @@
         <script>
          var seconds = 0;
          setInterval(function() {
-        document.getElementById("titmer").textContent = "You have been here for " + seconds + "seconds!";
+            seconds = seconds + 1;
+        document.getElementById("timer").textContent = "You have been here for " + seconds + "seconds!";
          }, 1000);
 
          function checkForm(){
@@ -31,19 +34,20 @@
               var ok = true;
 
               if (name == "") {
-                document.getElementById("msg-name").textContet = "Please enter your name!";
+                document.getElementById("msg-name").textContent = "Please enter your name!";
                 document.getElementById("msg-name").style.color = "red";
                 ok = false;
              }   else {
-                document.getElementById("msg-name").textContet = "Great Name!";
+                document.getElementById("msg-name").textContent = "Great Name!";
                 document.getElementById("msg-name").style.color = "green";
              }
               if (guess == "") {
-                document.getElementById("msg-guess").textContet = "Please enter your guess!";
+                document.getElementById("msg-guess").textContent = "Please enter your guess!";
                 document.getElementById("msg-guess").style.color = "red";       
+                  ok = false;
             } else {
-                document.getElementById("msg-name").textContet = "Guess Saved!";
-                document.getElementById("msg-name").style.color = "Green";
+                document.getElementById("msg-guess").textContent = "Guess Saved!";
+                document.getElementById("msg-guess").style.color = "Green";
             }
 
             if (ok == true) {
