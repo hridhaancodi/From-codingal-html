@@ -79,7 +79,7 @@
             </div>
 
         </div>
-            <button onclick="mangeZoo()">Manage Zoo</button>
+            <button onclick="manageZoo()">Manage Zoo</button>
             <div id="output">
                 Zoo Information will appear here.
             </div>
@@ -94,18 +94,18 @@
                     let parentNodeName = lionZone.parentNode.id;
                     let firstChildZone = zoo.children[0].id;
                     let secondChildZone = zoo.children[1].id;
-                    let nextSiblingsZone = lionZone.nextElementSiblings.id;
+                    let nextSiblingsZone = lionZone.nextElementSibling.id;
                     let previousSibling = pandaZone.previousElementSibling.id;
                    
                     let elementNodeType = lionZone.nodeType;
                     let textNodeType = lionZone.firstChild.nodeType;
 
                     lionZone.style.backgroundColor = "#fff3cd";
-                    elephantZone.style.backgroundColor = "d1ecf1";
+                    elephantZone.style.backgroundColor = "#d1ecf1";
                     pandaZone.style.backgroundColor = "#f8d7da";
 
                     lionZone.querySelector("h2").innerHTML = "Updated Lion Zone";
-                    elephantone.querySelector("h2").innerHTML = "Updated elephant Zone";
+                    elephantZone.querySelector("h2").innerHTML = "Updated elephant Zone";
                     pandaZone.querySelector("h2").innerHTML = "Updated Panda Zone ";
 
                     output.innerHTML = 
@@ -115,11 +115,11 @@
                     "Second child of Zoo: "+ secondChildZone + "<br><br>"  +
 
                     "strongSibiling Node Information:</strong><br>" +
-                    "Next sibling of Lion Zone: " + nextSiblingZone + "<br>" +     
+                    "Next sibling of Lion Zone: " + nextSiblingsZone + "<br>" +     
                     
                     "Previous sibling of Panda Zone: "+
-                    previousSiblingZone + "<br><br>" +
-                    "<strong>Types of Nodes:</strong<br>" +
+                    previousSibling + "<br><br>" +
+                    "<strong>Types of Nodes:</strong><br>" +
                     "Lion Zone element node type: " + elementNodeType + "<br>" +
 
                     "Lion Zone first child text node type: " + textNodeType + "<br><br> " + 
