@@ -1,0 +1,83 @@
+
+<html>
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            font-family: Arial, sans-serif;
+        }
+          h2 {
+            color: yellow;
+            font-size: 100px;
+          }
+        .calendar {
+            display: flex;
+            width: 450px;
+            border: 4px solid white;
+            border-radius: 15px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .box {
+            flex: 1;
+            padding: 25px 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            border-right: 2px solid white;
+        }
+
+        #month {
+            background: #ff6b6b;
+        }
+
+        #day {
+            background: #4ecdc4;
+            font-size: 40px;
+        }
+
+        #year {
+            background: #f7b731;
+        }
+
+        .box:last-child {
+            border-right: none;
+        }
+    </style>
+</head>
+
+<body>
+<h2 style="position: absolute; top: 0; left: 50%; transform: translateX(-50%);">
+    Calender
+</h2>
+<div class="calendar">
+    <div class="box" id="month"></div>
+    <div class="box" id="day"></div>
+    <div class="box" id="year"></div>
+</div>
+
+<script>
+    function showTime() {
+        var date = new Date();
+
+        var month = date.toLocaleString('default', { month: 'long' });
+        var day = date.getDate();
+        var year = date.getFullYear();
+
+        document.getElementById("month").innerText = month;
+        document.getElementById("day").innerText = day;
+        document.getElementById("year").innerText = year;
+    }
+
+    showTime();
+</script>
+
+</body>
+</html>
