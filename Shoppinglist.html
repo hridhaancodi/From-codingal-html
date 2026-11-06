@@ -1,0 +1,46 @@
+<head>
+    <title>Shopping List</title>
+</head>
+<body>
+
+    <h2>Add your shopping items here</h2>
+
+    <input type="text" id="itemInput" placeholder="Enter shopping item">
+
+    <button onclick="addItem()">Add</button>
+
+    <h2>Shopping List</h2>
+
+    <ul id="shoppingList"></ul>
+    <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6"
+     alt="Apple"
+     width="200">
+     <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35"
+     alt="Biscuits"
+     width="200">
+<img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1"
+     alt="TV"
+     width="200">
+<img src="https://images.unsplash.com/photo-1585659722983-3a675dabf23d"
+     alt="Oven"
+     width="200">
+
+
+<script>
+function addItem() {
+    var myInput = document.getElementById("itemInput");
+    var myItem = document.getElementById("shoppingList");
+
+    var inputItems = myInput.value.trim();
+
+    if (inputItems === "") {
+        return;
+    }
+
+    var items = `<li>${inputItems}</li>`;
+
+    myItem.insertAdjacentHTML("beforeend", items);
+
+    myInput.value = "";
+}
+</script>
