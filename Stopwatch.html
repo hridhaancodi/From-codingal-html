@@ -19,7 +19,7 @@
                  var appendSeconds = document.getElementById("seconds");
                   var buttonStart = document.getElementById("button-start");
                    var ButtonStop = document.getElementById("button-stop");
-                    var ButtonRestart = document.getElementById("button-reset");
+                    var ButtonReset = document.getElementById("button-reset");
                     var Interval;
 
                     buttonStart.onclick = function() {
@@ -37,14 +37,14 @@
                         seconds = "00";
                         appendMilliseconds.innerHTML = milliseconds;
                         appendSeconds.innerHTML = seconds;
-                    }
-            }
+                     }
+                      }
 
                      function startTimer() {
                         milliseconds++;
 
                         if (milliseconds <= 9) {
-                            appendMilliseconds.innerHtml = "0" + milliseconds;
+                            appendMilliseconds.innerHTML = "0" + milliseconds;
                         }
                         if (milliseconds > 9) {
                             appendMilliseconds.innerHTML = milliseconds;
@@ -54,6 +54,9 @@
                             appendSeconds.innerHTML = seconds;
                             milliseconds = 0;
                             appendMilliseconds.innerHTML = seconds;
+                        }
+                        if (seconds > 9) {
+                            appendSeconds.innerHTML = seconds;
                         }
                      }
         </script>
