@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping List App</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+            text-align: center;
+        }
+        h1 {
+            color: darkblue;
+        }
+        .examples {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px;
+        }
+        .example {
+            background-color: white;
+            padding: 10px;
+            width: 100px;
+            border-radius: 10px;
+        }
+        .example img {
+            width: 80px;
+            height: 80px;
+        }
+        #shopping-list {
+            display: inline-block;
+            text-align: left;
+            font-size: 20px;
+        }
+        #shopping-list li {
+            margin: 10px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+        }
+        .delete {
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-left: 15px;
+        }
+        #number {
+            font-size: 100px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Shopping List</h1>
+    <h3>Recommended food items</h3>
+    <div class="examples">
+        <div class="example">
+            <img src="https://em-content.zobj.net/source/apple/391/red-apple_1f34e.png">
+            <p>Apple</p>
+        </div>
+        <div class="example">
+            <img src="https://em-content.zobj.net/source/apple/391/tropical-drink_1f379.png">
+    <p>Orange Juice</p>
+        </div>
+        <div class="example">
+            <img src="https://em-content.zobj.net/source/apple/391/bread_1f35e.png">
+            <p>Bread</p>
+        </div>
+        <div class="example">
+            <img src="https://em-content.zobj.net/source/apple/391/egg_1f95a.png">
+            <p>Eggs</p>
+        </div>
+    </div>
+    <p>Type anything you want to buy:</p>
+    <input type="text" id="item"
+    placeholder="Enter shopping item">
+    <button id="add">Add Item</button>
+    <ul id="shopping-list"></ul>
+    <h1>Random Number App</h1>
+    <p>Click on the number to start or stop changing it.</p>
+    <h2 id="number">1</h2>
+    <script>
+        window.onload = function() {
+            var item = document.getElementById('item');
+            var add = document.getElementById('add');
+            var list = document.getElementById('shopping-list');
+            add.onclick = function() {
+                if (item.value.trim() != "") {
+                    var li = document.createElement('li');
+                    li.innerHTML = item.value;
+                    var del = document.createElement('button');
+                    del.innerHTML = "Delete";
+                    del.className = "delete";
+                    del.onclick = function() {
+                        li.remove();
+                    };
+                    li.appendChild(del);
+                    list.appendChild(li)
+                    item.value = "";
+                }
+                else {
+                    alert("Please enter an item.");
+                }
+            }
+            var numbers = [1,2,3,4,5,6,7,8,9,10];
+            var value = document.getElementById('number');
+            var status = true;
+            var interval;
+            function change() {
+                var random = Math.floor(
+                    Math.random() * numbers.length
+                );
+            value.innerHTML = numbers[random];
+
+            }
+            function startStop() {
+                if (status == true) {
+                    interval = setInterval(change, 100);
+                    status = false;
+                }
+                else {
+                    clearInterval(interval);
+                    status = true;
+                }
+            }
+            value.onclick = startStop;
+        };
+    </script>
+</body>
+</html>
